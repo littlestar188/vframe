@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vframe</title>
+
+
+	
+	<link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">	
+    <!-- bootstrap-progressbar -->
+    <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- normalize -->
+    <link rel="stylesheet" href="vendors/normalize-css/normalize.css">
+	<!-- Custom Theme Style -->
+	<link rel="stylesheet" href="plugins/css/custom.css">
+	<!-- self css -->
+	<link rel="stylesheet" href="self/css/public.css">
+
+</head>
+<body  class="nav-md">
+	<div id="vframe">		
+		<div class="container body">
+			<div class="main_container">
+				<!--leftMenuTree -->
+				<left-menu v-on:></left-menu>
+				<!-- top nav -->
+				<top-nav></top-nav>
+				<!-- page content -->
+				<div class="right_col" role="main">
+					<!-- 图表区 -->
+					<div class="row">
+					  <div class="col-md-12 col-sm-12 col-xs-12">
+					    <div class="dashboard_graph">
+
+					      <div class="row x_title">
+					        <div class="col-md-6">
+					          <h3>Network Activities <small>Graph title sub-title</small></h3>
+					        </div>
+					        <div class="col-md-6">
+					          <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+					            <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+					            <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
+					          </div>
+					        </div>
+					      </div>
+
+					      <div class="col-md-9 col-sm-9 col-xs-12">
+					        <div id="chart_plot_01" class="demo-placeholder"></div>
+					      </div>
+					      <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
+					        <div class="x_title">
+					          <h2>Top Campaign Performance</h2>
+					          <div class="clearfix"></div>
+					        </div>
+
+					        <div class="col-md-12 col-sm-12 col-xs-6">
+					          <div>
+					            <p>Facebook Campaign</p>
+					            <div class="">
+					              <div class="progress progress_sm" style="width: 76%;">
+					                <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="80"></div>
+					              </div>
+					            </div>
+					          </div>
+					          <div>
+					            <p>Twitter Campaign</p>
+					            <div class="">
+					              <div class="progress progress_sm" style="width: 76%;">
+					                <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="60"></div>
+					              </div>
+					            </div>
+					          </div>
+					        </div>
+					        <div class="col-md-12 col-sm-12 col-xs-6">
+					          <div>
+					            <p>Conventional Media</p>
+					            <div class="">
+					              <div class="progress progress_sm" style="width: 76%;">
+					                <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="40"></div>
+					              </div>
+					            </div>
+					          </div>
+					          <div>
+					            <p>Bill boards</p>
+					            <div class="">
+					              <div class="progress progress_sm" style="width: 76%;">
+					                <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
+					              </div>
+					            </div>
+					          </div>
+					        </div>
+
+					      </div>
+
+					      <div class="clearfix"></div>
+					    </div>
+					  </div>
+
+					</div>
+					<br />
+				</div>
+				<bottom-footer></bottom-footer>
+			</div>
+		</div>	
+	</div>
+
+	
+	<!-- Vue -->
+	<!-- <script src="node_modules/vue/dist/vue.js"></script>
+	<script src="node_modules/vue-resource/dist/vue-resource.js"></script> -->	
+	<!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="vendors/Flot/jquery.flot.js"></script>
+    <script src="vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="vendors/Flot/jquery.flot.time.js"></script>
+    <script src="vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="vendors/moment/min/moment.min.js"></script>
+    <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="plugins/js/custom.js"></script>
+
+	<script src="dist/js/main.js"></script>
+</body>
+</html>
